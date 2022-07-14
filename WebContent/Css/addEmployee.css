@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+*{
+	margin: 0;
+	padding: 0; 
+}
+body{
+	box-sizing: border-box;
+	background-image:url('b.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.formDiv{
+	margin-top: 70px;
+	
+}
+.formDiv h3{
+	color: black; 
+	text-shadow: 2px 2px 4px #000000; 
+	font-weight: 600;
+	 padding: 10px;
+}
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.8); 
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	
+	<servlet>
+		<servlet-name>addEmployee</servlet-name>
+		<servlet-class>com.adj.emgm.EmployeeServlet</servlet-class>
+
+		<init-param>
+			<param-name>Storage</param-name>
+			<param-value>com.adj.emgm.EmployeInMemoryStore</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>deleteServlet</servlet-name>
+		<servlet-class>com.adj.emgm.DeleteServletId</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>displayServlet</servlet-name>
+		<servlet-class>com.adj.emgm.DisplayServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>searchServletId</servlet-name>
+		<servlet-class>com.adj.emgm.SearchServletId</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>searchServletName</servlet-name>
+		<servlet-class>com.adj.emgm.SearchServletName</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>updateServlet</servlet-name>
+		<servlet-class>com.adj.emgm.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>sortSalaryServlet</servlet-name>
+		<servlet-class>com.adj.emgm.SortBySalaryServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>addEmployee</servlet-name>
+		<url-pattern>/EmployeeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>deleteServlet</servlet-name>
+		<url-pattern>/DeleteServletId</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>displayServlet</servlet-name>
+		<url-pattern>/DisplayServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>searchServletId</servlet-name>
+		<url-pattern>/SearchServletId</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>searchServletName</servlet-name>
+		<url-pattern>/SearchServletName</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>updateServlet</servlet-name>
+		<url-pattern>/UpdateServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>sortSalaryServlet</servlet-name>
+		<url-pattern>/SortBySalaryServlet</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>

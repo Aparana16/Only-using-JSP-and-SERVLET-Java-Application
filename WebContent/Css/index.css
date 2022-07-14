@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+*{
+	margin: 0;
+	padding: 0; 
+}
+body{
+	box-sizing: border-box;
+}
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.8); 
+}
+.Nav{
+	margin:15px 90px;
+	color:black;
+	
+}
